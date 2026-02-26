@@ -1,0 +1,64 @@
+/* Apply font everywhere */
+* {
+    font-family: 'Varela Round', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Animated Gradient Background */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    background: linear-gradient(-45deg, #1e1e2f, #302b63, #24243e, #0f0c29);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+}
+
+/* Smooth Timer Animation */
+#timer {
+    font-size: 80px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+#timer:hover {
+    transform: scale(1.1);
+}
+
+/* Glowing Buttons */
+button {
+    padding: 14px 28px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background: #6a5acd;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px #6a5acd;
+}
+
+button:hover {
+    background: #836fff;
+    box-shadow: 0 0 20px #836fff, 0 0 40px #836fff;
+    transform: translateY(-3px);
+}
+button:active {
+    transform: scale(0.9);
+}
